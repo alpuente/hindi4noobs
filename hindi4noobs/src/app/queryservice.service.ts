@@ -6,7 +6,8 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class QueryserviceService {
-  serverAddress:string = "http://localhost:3000";
+  //serverAddress:string = "http://localhost:3000";
+  serverAddress:string = "http://hindi4noobs-env.eba-6vvpptux.us-west-1.elasticbeanstalk.com";
   getLetterUrl:string = this.serverAddress + "/?letter=";
 
   constructor(private http:HttpClient) { 

@@ -1,4 +1,4 @@
-<h1 class="text-center">Welcome to Hindi 4 Noobs!</h1>
+<h1 class="text-center" style="font-weight: bold;">Hindi 4 Noobs</h1>
 <h2 class="text-center">Vowels</h2>
 <table class="table">
   <tbody>
@@ -36,35 +36,24 @@
     </tr>
   </thead>
   <tbody>
-                <!--tr *ngFor="let item of favorites | keyvalue; let i = index" [ngClass]="(i+1)%2==0 ? 'even' :  'odd'"> 
-                <td> {{i + 1}} </td>
-                <td> 
-                    <div>
-                        <img src={{item.value.image}} style="width: 45px; height: 45px;"> 
-                    </div><img src={{item.value.image}} style="width: 10%"-->
-                <!--/td>
-                <td style="cursor: pointer" matTooltip="{item.value.city}"> <p style="color: blue;" (click)="queryWeather(i)">{{item.value.city}}</p></td>
-                <td> <p>{{item.value.state}} </p></td>
-                <td><button style="background-color: #f2f1f0; border-radius: 4px;" (click)="deleteFavorite(i)"><i class="material-icons" style="color:#d3a641">delete</i></button></td>
-            </tr-->
     <tr>
-      <th scope="col">k-group</th>
-      <td *ngFor="let item of kGroup" (click)="getSound(item)">{{item}}</td>
+      <th scope="col" title="These consonants are called velar because the back of the toung touches the velum, or the rear of the soft palate.">k-group/Velar Consonants</th>
+      <td *ngFor="let item of kGroup" (click)="getSound(item)" cursor="pointer">{{item}}</td>
     </tr>
     <tr>
-      <th scope="col">c-group</th>
+      <th scope="col" title="During articulation, the body of the tongue touches the hard palate.">c-group</th>
       <td *ngFor="let item of cGroup" (click)="getSound(item)">{{item}}</td>
     </tr>
     <tr>
-      <th scope="col">T-group</th>
+      <th scope="col" title="The tip of the tongue curls back and the underside of the tongue touches the hard palate.">T-group</th>
       <td *ngFor="let item of Tgroup" (click)="getSound(item)">{{item}}</td>
     </tr>
     <tr>
-      <th scope="col">t-group</th>
+      <th scope="col" title="The tip of the tongue touches the back of the teeth.">t-group</th>
       <td *ngFor="let item of tGroup" (click)="getSound(item)">{{item}}</td>
     </tr>
     <tr>
-      <th scope="col">p-group</th>
+      <th scope="col" title="Pronounced by closure or near closure of the lips.">p-group</th>
       <td *ngFor="let item of pGroup" (click)="getSound(item)">{{item}}</td>
     </tr>
     <tr>
