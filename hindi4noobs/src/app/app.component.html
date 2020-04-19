@@ -1,0 +1,107 @@
+<h1 class="text-center" style="font-weight: bold;">Hindi 4 Noobs</h1>
+<h2 class="text-center">Vowels</h2>
+<table class="table">
+  <tbody>
+    <tr>
+      <th scope="col">Independent Form</th>
+      <td *ngFor="let item of vowels" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Dedependent Form</th>
+      <td>none</td>
+      <td>	ा</td>
+      <td>	ि</td>
+      <td>ी</td>
+      <td>	ु</td>
+      <td>	ू</td>
+      <td>ृ</td>
+      <td>	े</td>
+      <td>	ै</td>
+      <td>	ो</td>
+      <td>ौ</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="text-center">Consonants</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Voiceless Unaspirated</th>
+      <th scope="col">Voiceless Aspirated</th>
+      <th scope="col">Voiced Unaspirated</th>
+      <th scope="col">Voiced Aspirated</th>
+      <th scope="col">Nasal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col" title="These consonants are called velar because the back of the toung touches the velum, or the rear of the soft palate.">k-group/Velar Consonants</th>
+      <td *ngFor="let item of kGroup" (click)="getSound(item)" cursor="pointer">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col" title="During articulation, the body of the tongue touches the hard palate.">c-group</th>
+      <td *ngFor="let item of cGroup" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col" title="The tip of the tongue curls back and the underside of the tongue touches the hard palate.">T-group</th>
+      <td *ngFor="let item of Tgroup" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col" title="The tip of the tongue touches the back of the teeth.">t-group</th>
+      <td *ngFor="let item of tGroup" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col" title="Pronounced by closure or near closure of the lips.">p-group</th>
+      <td *ngFor="let item of pGroup" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col">Others</th>
+      <td *ngFor="let item of others" (click)="getSound(item)">{{item}}</td>
+    </tr>
+    <tr>
+      <th scope="col"></th>
+      <td *ngFor="let item of others2" (click)="getSound(item)">{{item}}</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="col"></th>
+      <td *ngFor="let item of others3" (click)="getSound(item)">{{item}}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<!--table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table-->
